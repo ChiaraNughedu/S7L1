@@ -15,14 +15,11 @@ class Pet {
     this.breed = _breed;
   }
   sameOwner(otherPet) {
-    if (this.ownerName === otherPet.ownerName) {
-        return true;
-    }
-    console.log(sameOwner);
-  }
+    return this.ownerName === otherPet.ownerName
+        
 }
 
-const createList = function () {
+const createList = function() {
   petList.innerText = "";
   pets.forEach((pet) => {
     const newli = document.createElement("li");
@@ -39,7 +36,7 @@ const createList = function () {
   });
 };
 
-btnAdd.onclick = function (event) {
+btnAdd.onclick = function(event) {
   event.preventDefault();
   let newPet = new Pet(
     petName.value,
@@ -53,4 +50,5 @@ btnAdd.onclick = function (event) {
   ownerName.value = "";
   species.value = "";
   breed.value = "";
-};
+}
+}
