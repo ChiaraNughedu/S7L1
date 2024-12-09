@@ -15,8 +15,8 @@ class Pet {
     this.breed = _breed;
   }
   sameOwner(otherPet) {
-    return this.ownerName === otherPet.ownerName
-        
+    return this.ownerName === otherPet.ownerName; 
+}
 }
 
 const createList = function() {
@@ -51,4 +51,4 @@ btnAdd.onclick = function(event) {
   species.value = "";
   breed.value = "";
 }
-}
+
